@@ -1,6 +1,6 @@
 {
   "name": "shrinked",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Parses the shrinkwrap.json and returns the B+ tree of the dependencies.",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,6 @@
     "type": "git",
     "url": "git://github.com/kaelzhang/node-shrinked.git"
   },
-  "keywords": [
-    "shrinked"
-  ],
   "engines": {
     "node": ">=0.11.0"
   },
