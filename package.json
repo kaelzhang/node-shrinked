@@ -1,0 +1,28 @@
+{
+  "name": "shrinked",
+  "version": "0.1.0",
+  "description": "shrinked",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaelzhang/node-shrinked.git"
+  },
+  "keywords": [
+    "shrinked"
+  ],
+  "engines": { 
+    "node": ">=0.11.0"
+  },
+  "author": "kael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaelzhang/node-shrinked/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  }
+}
