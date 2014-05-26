@@ -1,6 +1,6 @@
 # shrinked [![NPM version](https://badge.fury.io/js/shrinked.svg)](http://badge.fury.io/js/shrinked) [![Build Status](https://travis-ci.org/kaelzhang/node-shrinked.svg?branch=master)](https://travis-ci.org/kaelzhang/node-shrinked) [![Dependency Status](https://gemnasium.com/kaelzhang/node-shrinked.svg)](https://gemnasium.com/kaelzhang/node-shrinked)
 
-Parses the shrinkwrap.json and returns the B+ tree if the dependencies.
+Parses the shrinkwrap.json and returns the B+ tree of the dependencies.
 
 ```js
 <name>: {
