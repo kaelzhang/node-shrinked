@@ -38,6 +38,22 @@ var shrinked = require('shrinked');
 - options `Object`
   - dependencyKeys `Array=['dependencies']` into which dependency key should `shrinked` decende down.
 
+```js
+shrinked('cortex-shrinkwrap.json', {
+  dependencyKeys: [
+    'dependencies',
+    // Then `shrinked` will parse three more keys in addition.
+    'asyncDependencies',
+    'devDependencies',
+    'engines'
+  ]
+}, function(err, tree){
+  if (err) {
+    return console.error(err);
+  }
+  console.log('The B+ tree is', util.inspect(tree, depth: 10));
+});
+```
 
 ### shrinked.parse(json, [options])
 
