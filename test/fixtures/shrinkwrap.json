@@ -22,6 +22,15 @@
       "from": "c@~2.0.0", 
       "// commments": "this is a version different from the c of b's dependencies",
       "version": "2.0.10"
-    }
+    },
+
+    "// comments": "invalid cases",
+    "e": {
+    },
+    "f": [],
+    "g": {
+      "name": ""
+    },
+    "h": ""
   }
 }
