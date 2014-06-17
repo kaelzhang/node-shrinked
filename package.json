@@ -1,6 +1,6 @@
 {
   "name": "shrinked",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Parses the shrinkwrap.json and returns the B+ tree of the dependencies.",
   "main": "index.js",
   "scripts": {
