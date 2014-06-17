@@ -48,7 +48,17 @@ shrinked._walk = function (node, keys, host) {
       is_empty = false;
 
       dep_info = deps[dep_name];
+      
+      // At the toplevel of shrinkwrap.json,
+      // there is a `name` field but not for sub level of the object
+      // so, we add it.
       dep_info.name = dep_name;
+
+      // `dep_info` must be an object
+      if (!shrinked._invalid(dep_info)) {
+        continue;
+      }
+
       dep_range = shrinked._parseFrom(dep_info.from).range;
       parsed_deps[dep_name] = {};
       parsed_deps[dep_name][dep_range] = dep_info.version;
@@ -75,6 +85,19 @@ shrinked._parseFrom = function(pkg) {
     name: split[0],
     range: split[1]
   };
+};
+
+
+// @param {Object} node
+// @returns if a node is invalid
+shrinked._invalid = function (node) {
+  if (!node || Object(node) !== node) {
+    return false;
+  }
+
+  return [node.name, node.version, node.from].every(function (str) {
+    return str && typeof str === 'string';
+  });
 };
 
 
